@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>植物大战僵尸</title>
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+	<style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+	}
+	canvas{
+		border:1px solid #333;
+	}
+	#cover{
+		position:absolute;
+		left:165px;
+		top:10px;
+		width: 65px;
+		height: 65px;
+		
+
+	}
+	.bg{
+		background: url(images/plant/pea/wdp_0.png);
+	}
+	</style>
+</head>
+<body>
+	<div id="cover"></div>
+	<audio src="audio/welcome.mp3" id="welcome"></audio>
+	<audio src="audio/plant.ogg" id="pea"></audio>
+	<audio src="audio/zoombieattack.ogg" id="attack"></audio>
+	<audio src="audio/lose.ogg" id="lose"></audio>
+	<audio src="audio/win.mp3" id="win"></audio>
+	<audio src="audio/baitian.ogg" id="baitian"></audio>
+	<canvas width="1050" height="600" id="mycanvas"></canvas>
+	<script type="text/javascript" src="js/SimpleJavaScriptInheritance.js"></script>
+	<script type="text/javascript" src="js/underscore-min.js"></script>
+	<script type="text/javascript" src="js/Game.js"></script>
+	<script type="text/javascript" src="js/Plants.js"></script>
+	<script type="text/javascript" src="js/Bullets.js"></script>
+	<script type="text/javascript" src="js/zoombies.js"></script>
+	<script type="text/javascript" src="js/background.js"></script>
+	<script type="text/javascript" src="js/zoombie.js"></script>
+	<script type="text/javascript" src="js/plantpea.js"></script>
+	<script type="text/javascript" src="js/bullet.js"></script>
+	<script type="text/javascript" src="js/cardslot.js"></script>
+	<script type="text/javascript" src="js/sun.js"></script>
+	<script type="text/javascript" src="js/scene.js"></script>
+	<script type="text/javascript">
+		var game = new Game("mycanvas");
+		
+	</script>
+</body>
+</html>
